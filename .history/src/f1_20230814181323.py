@@ -32,10 +32,6 @@ def getAlbumRetentionRate(albumId, step=50, count=2):
 
     return retention_rates
 
-# TODO：30551199 少年药王，API得到的数据，是倒叙的，这个不是很明白，为什么只有这个API是倒叙的，其他的API都是正序的。
-# TODO：有一些专辑是有一些片花的，在第一集之前，这些片花很多人都不播放的，所以得到的留存会超过100%
-# TODO：另外，可能计算前100集的播放次数/总播放次数，也有一定的参考价值，这个比率越低，说明越多的人听到后面的集数，这个专辑的质量就越高。
-
 if __name__ == "__main__":
     albumId = 34220825
     step = 50
