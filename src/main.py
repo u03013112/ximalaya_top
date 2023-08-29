@@ -22,7 +22,7 @@ ablum_ids2 = [37081450,38160002,3150142,69266385,4482696,3888524,71664971,343903
 
 
 def main1(ablum_ids):
-    csvFilename = '../data/main2.csv'
+    csvFilename = '../data/main3.csv'
     with open(csvFilename, 'w', encoding='utf-8') as f:
         # 先写一个表头：名字，播放次数，留存率1，留存率2，留存率3，留存率4
         f.write('name,playtimes,retention_rate1,retention_rate2,retention_rate3,retention_rate4\n')
@@ -39,5 +39,6 @@ def main1(ablum_ids):
 
 
 if __name__ == "__main__":
-    ablum_ids = ablum_ids1 + ablum_ids2
+    # ablum_ids = ablum_ids1 + ablum_ids2
+    ablum_ids = [71968169]
     main1(ablum_ids)
