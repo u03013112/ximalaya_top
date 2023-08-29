@@ -39,6 +39,6 @@ def main1(ablum_ids):
 
 
 if __name__ == "__main__":
-    # ablum_ids = ablum_ids1 + ablum_ids2
-    ablum_ids = [71968169]
+    ablum_ids = ablum_ids1 + ablum_ids2
+    # ablum_ids = [71968169]
     main1(ablum_ids)
