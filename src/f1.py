@@ -24,7 +24,7 @@ def getAlbumRetentionRate(albumId, step=50, count=2):
         for track in data['list']:
             # 去掉片花
             title = track['title']
-            if title.find('片花') == -1:
+            if title.find('片花') == -1 and title.find('预告') == -1:
                 total_plays.append(track['playtimes'])
 
     # 计算留存率
